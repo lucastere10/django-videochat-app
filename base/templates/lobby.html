@@ -16,12 +16,10 @@
                     <label>Room:</label>
                     <input name="room" placeholder="Enter a room name..."  style="text-transform:uppercase"/>
                 </div>
-
                 <div class="form-field">
                     <label>Name:</label>
                     <input name="name" placeholder="Enter your name..."  style="text-transform:uppercase"/>
                 </div>
-
                 <div class="form-field">
                     <input type="submit" value="Join Stream" />
                 </div>
@@ -29,4 +27,13 @@
         </form>
     </section>
 </main>
+
+<script type="text/javascript">
+    let form = document.getElementById('form')
+    let handleSubmit = async (e) => {
+        e.preventDefault()
+        window.open('/room/', '_self')
+    }
+    form.addEventListener('submit', handleSubmit)
+</script>
 {% endblock content %}  

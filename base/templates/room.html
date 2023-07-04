@@ -6,7 +6,8 @@
         <p>Room Name: <span id="room-name"></span></p>
     </section>
 
-    <section id="video-streams"></section>
+    <section id="video-streams">
+    </section>
 
     <section id="controls-wrapper">
         <div class="icon-wrapper">
@@ -22,4 +23,6 @@
         </div>
     </section>
 </main>
+<script type="text/javascript" src="{% static 'assets/AgoraRTC_N-4.18.0.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/streams.js' %}"></script>
 {% endblock content %}
